@@ -1,5 +1,6 @@
 package quarter2;
 import org.junit.Test;
+
 public class MaingatProfileTest {
     @Test
     public void MyProfile() {
