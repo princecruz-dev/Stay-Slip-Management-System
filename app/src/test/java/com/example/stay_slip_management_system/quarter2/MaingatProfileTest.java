@@ -13,4 +13,4 @@ public class MaingatProfileTest {
         System.out.println("Hello! my Name is " + myName + ", and I am " + myAge + " years old.");
         System.out.println("My favorite food is " + favFood + " and my favorite place to go to is " + favPlace + "!");
     }
-}
+};
