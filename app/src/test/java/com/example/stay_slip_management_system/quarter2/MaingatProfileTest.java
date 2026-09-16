@@ -1,4 +1,4 @@
-package quarter2;
+package com.example.stay_slip_management_system.quarter2;
 import org.junit.Test;
 
 public class MaingatProfileTest {
