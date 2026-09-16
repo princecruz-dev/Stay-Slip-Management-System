@@ -1,8 +1,8 @@
 package quarter2;
 import org.junit.Test;
-public class Delgado {
+public class delgado {
 
-   @Test
+    @Test
     public void printMYprofile(){
         String myName = "Xian";
         String petname1 = "Oyo";
@@ -15,6 +15,6 @@ public class Delgado {
         System.out.println("I have 2 wonderful pets named" + petname1 + " and " + petname2 + ".");
         System.out.println("If I could eat " + favfood + " everyday!");
 
-   }
+    }
 
 }
