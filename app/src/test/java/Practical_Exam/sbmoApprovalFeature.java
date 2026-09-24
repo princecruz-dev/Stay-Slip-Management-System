@@ -3,12 +3,18 @@ package Practical_Exam;
 import java.util.Scanner;
 
 public class sbmoApprovalFeature {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        runFeature(scanner);
+        scanner.close();
+    }
     public static void runFeature(Scanner scanner) {
         boolean validDecision = false;
 
         System.out.println("--- SBMO APPROVAL ---");
 
-        while (validDecision) {
+        while (!validDecision) {
             System.out.println("Enter your ID: ");
             String yourID = scanner.nextLine().trim();
             System.out.println("Enter SBMO decision (Approve / Reject): ");
