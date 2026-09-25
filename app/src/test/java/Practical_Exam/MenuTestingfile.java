@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class MainSystemTest {
+public class MenuTestingfile {
     // paki-sabi po muna sa'kin kung gagalawin niyo'to
 
     @Test
@@ -30,44 +30,31 @@ public class MainSystemTest {
 
             if (interactionCount == 1) {
 
-                // Main Menu → Student ID
-                simulatedUserInput.append("1\n");
 
-                // Student ID
+                simulatedUserInput.append("1\n");
                 simulatedUserInput.append("20250001\n");
 
             } else if (interactionCount == 2) {
 
-                // Main Menu para sa Stay Slip Request
                 simulatedUserInput.append("2\n");
-
-                // Submit request
                 simulatedUserInput.append("1\n");
 
             } else if (interactionCount == 3) {
 
-                // Main Menu sa Reason for Staying
-                simulatedUserInput.append("3\n");
 
-                // Sa Reason'to
+                simulatedUserInput.append("3\n");
                 simulatedUserInput.append(
                         "School activity requires me to stay.\n"
                 );
 
             } else if (interactionCount == 4) {
 
-                // Main Menu sa SBMO Approval
                 simulatedUserInput.append("4\n");
-
-                // Approve
                 simulatedUserInput.append("1\n");
 
             } else {
 
-                // Main Menu → Teacher Approval
                 simulatedUserInput.append("5\n");
-
-                // Approve
                 simulatedUserInput.append("1\n");
             }
 
