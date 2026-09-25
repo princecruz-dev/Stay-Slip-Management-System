@@ -3,6 +3,7 @@ package Practical_Exam;
 import java.util.Scanner;
 
 public class teacherApprovalFeature {
+    //ABELLAR logic coding
 
     public static void runFeature(Scanner scanner) {
         TeacherApprovalComponent();

@@ -3,6 +3,7 @@ package Practical_Exam;
 import java.util.Scanner;
 
 public class sbmoApprovalFeature {
+    //DELGADO logic coding
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

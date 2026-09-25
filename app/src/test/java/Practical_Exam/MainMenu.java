@@ -25,10 +25,10 @@ public class MainMenu {
 
             int choice = scanner.nextInt();
 
-            // 'Wag na po masiyadong galawin 'tong Echo
+
             System.out.println(choice);
 
-            // Menu selection
+
             if (choice == 1) {
 
                 staySlipRequestFeature.runFeature(scanner);

@@ -3,6 +3,7 @@ package Practical_Exam;
 import java.util.Scanner;
 
 public class staySlipRequestFeature {
+    //MAINGAT logic coding
     public static void runFeature(Scanner scanner) {
         boolean isAccepted = false;
 
