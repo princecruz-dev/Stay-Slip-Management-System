@@ -1,0 +1,56 @@
+Index: app/src/test/java/Practical_Exam/MainMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Practical_Exam;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class MainMenu {\r\n\r\n    // Main system\r\n    public void start(Scanner scanner) {\r\n\r\n        boolean isRunning = true;\r\n\r\n        while (isRunning) {\r\n\r\n            System.out.println();\r\n            System.out.println(\"========================================\");\r\n            System.out.println(\"       STAY SLIP REQUEST SYSTEM\");\r\n            System.out.println(\"========================================\");\r\n            System.out.println(\"1. Stay Slip Request\");\r\n            System.out.println(\"2. Reason for Staying\");\r\n            System.out.println(\"3. SBMO Approval\");\r\n            System.out.println(\"4. Teacher Approval\");\r\n            System.out.println(\"5. Exit\");\r\n            System.out.println(\"========================================\");\r\n            System.out.print(\"Enter your choice: \");\r\n\r\n            int choice = scanner.nextInt();\r\n\r\n            // 'Wag na po masiyadong galawin 'tong Echo\r\n            System.out.println(choice);\r\n\r\n            // Menu selection\r\n            if (choice == 1) {\r\n\r\n                staySlipRequestFeature.runFeature(scanner);\r\n\r\n            } else if (choice == 2) {\r\n\r\n                reasonForStayingFeature.runFeature(scanner);\r\n\r\n            } else if (choice == 3) {\r\n\r\n                sbmoApprovalFeature.runFeature(scanner);\r\n\r\n            } else if (choice == 4) {\r\n\r\n                teacherApprovalFeature.runFeature(scanner);\r\n\r\n            } else if (choice == 5) {\r\n\r\n                System.out.println(\"Exiting Stay Slip Request System...\");\r\n                isRunning = false;\r\n\r\n            } else {\r\n\r\n                System.out.println(\"Invalid choice. Please try again.\");\r\n            }\r\n        }\r\n\r\n        System.out.println(\"System closed.\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/Practical_Exam/MainMenu.java b/app/src/test/java/Practical_Exam/MainMenu.java
+--- a/app/src/test/java/Practical_Exam/MainMenu.java	(revision bda9cd50cdd81c5ead2a0b9766953ef961bc72b1)
++++ b/app/src/test/java/Practical_Exam/MainMenu.java	(date 1790297687621)
+@@ -43,7 +43,7 @@
+ 
+             } else if (choice == 4) {
+ 
+-                teacherApprovalFeature.runFeature(scanner);
++                teacherApprovalFeature.runFeature();
+ 
+             } else if (choice == 5) {
+ 
+Index: app/src/test/java/Practical_Exam/teacherApprovalFeature.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Practical_Exam;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class teacherApprovalFeature {\r\n\r\n    public static void runFeature(Scanner scanner) {\r\n        TeacherApprovalComponent();\r\n    }\r\n\r\n    public static void TeacherApprovalComponent() {\r\n\r\n        Scanner scanner = new Scanner(System.in);\r\n\r\n        System.out.print(\"Enter Student ID: \");\r\n        String studentId = scanner.nextLine();\r\n\r\n        System.out.print(\"Enter Teacher Name: \");\r\n        String teacherName = scanner.nextLine();\r\n\r\n        boolean teacherApproval = false;\r\n        boolean validInput;\r\n\r\n        do {\r\n            System.out.print(\"Teacher Approval? (true/false): \");\r\n\r\n            if (!scanner.hasNextBoolean()) {\r\n                System.out.println(\"Invalid input. Please enter true or false.\");\r\n                scanner.next();\r\n                validInput = false;\r\n            } else {\r\n                teacherApproval = scanner.nextBoolean();\r\n                validInput = true;\r\n            }\r\n\r\n        } while (!validInput);\r\n\r\n        scanner.nextLine();\r\n\r\n        System.out.print(\"Enter Teacher Remarks: \");\r\n        String teacherRemarks = scanner.nextLine();\r\n\r\n        System.out.println(\"\\n--- Teacher Approval Details ---\");\r\n        System.out.println(\"Student ID: \" + studentId);\r\n        System.out.println(\"Teacher Name: \" + teacherName);\r\n        System.out.println(\"Teacher Approval: \" +\r\n                (teacherApproval ? \"Approved\" : \"Rejected\"));\r\n        System.out.println(\"Teacher Remarks: \" + teacherRemarks);\r\n\r\n        scanner.close();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/Practical_Exam/teacherApprovalFeature.java b/app/src/test/java/Practical_Exam/teacherApprovalFeature.java
+--- a/app/src/test/java/Practical_Exam/teacherApprovalFeature.java	(revision bda9cd50cdd81c5ead2a0b9766953ef961bc72b1)
++++ b/app/src/test/java/Practical_Exam/teacherApprovalFeature.java	(date 1790297687614)
+@@ -4,7 +4,7 @@
+ 
+ public class teacherApprovalFeature {
+ 
+-    public static void runFeature(Scanner scanner) {
++    public static void runFeature() {
+         TeacherApprovalComponent();
+     }
+ 
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_25\" default=\"true\" project-jdk-name=\"jbr-25\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision bda9cd50cdd81c5ead2a0b9766953ef961bc72b1)
++++ b/.idea/misc.xml	(date 1790296596100)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="jbr-25" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" project-jdk-name="jbr-25" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file

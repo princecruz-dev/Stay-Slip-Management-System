@@ -1,0 +1,20 @@
+Index: app/src/test/java/Practical_Exam/MenuTestingfile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Practical_Exam;\r\n\r\nimport org.junit.Test;\r\n\r\nimport java.io.ByteArrayInputStream;\r\nimport java.util.Scanner;\r\n\r\npublic class MainSystemTest {\r\n    // paki-sabi po muna sa'kin kung gagalawin niyo'to\r\n\r\n    @Test\r\n    public void testCompleteSystemFlow() {\r\n\r\n\r\n        StringBuilder simulatedUserInput = new StringBuilder();\r\n\r\n        System.out.println(\r\n                \"--- GENERATING SIMULATED USER INPUTS ---\"\r\n        );\r\n\r\n\r\n        int interactionCount = 1;\r\n\r\n        while (interactionCount <= 5) {\r\n\r\n            System.out.println(\r\n                    \"Generating interaction #\"\r\n                            + interactionCount\r\n            );\r\n\r\n            if (interactionCount == 1) {\r\n\r\n                // Main Menu → Student ID\r\n                simulatedUserInput.append(\"1\\n\");\r\n\r\n                // Student ID\r\n                simulatedUserInput.append(\"20250001\\n\");\r\n\r\n            } else if (interactionCount == 2) {\r\n\r\n                // Main Menu para sa Stay Slip Request\r\n                simulatedUserInput.append(\"2\\n\");\r\n\r\n                // Submit request\r\n                simulatedUserInput.append(\"1\\n\");\r\n\r\n            } else if (interactionCount == 3) {\r\n\r\n                // Main Menu sa Reason for Staying\r\n                simulatedUserInput.append(\"3\\n\");\r\n\r\n                // Sa Reason'to\r\n                simulatedUserInput.append(\r\n                        \"School activity requires me to stay.\\n\"\r\n                );\r\n\r\n            } else if (interactionCount == 4) {\r\n\r\n                // Main Menu sa SBMO Approval\r\n                simulatedUserInput.append(\"4\\n\");\r\n\r\n                // Approve\r\n                simulatedUserInput.append(\"1\\n\");\r\n\r\n            } else {\r\n\r\n                // Main Menu → Teacher Approval\r\n                simulatedUserInput.append(\"5\\n\");\r\n\r\n                // Approve\r\n                simulatedUserInput.append(\"1\\n\");\r\n            }\r\n\r\n            interactionCount++;\r\n        }\r\n\r\n\r\n        System.out.println(\r\n                \"Generating input to Exit the system...\"\r\n        );\r\n\r\n        simulatedUserInput.append(\"6\\n\");\r\n\r\n        System.out.println(\r\n                \"--- INPUT GENERATION COMPLETE ---\"\r\n        );\r\n\r\n\r\n        ByteArrayInputStream inputStream =\r\n                new ByteArrayInputStream(\r\n                        simulatedUserInput\r\n                                .toString()\r\n                                .getBytes()\r\n                );\r\n\r\n\r\n        Scanner masterScanner =\r\n                new Scanner(inputStream);\r\n\r\n\r\n        MainMenu mainMenu =\r\n                new MainMenu();\r\n\r\n\r\n        mainMenu.start(masterScanner);\r\n\r\n\r\n        System.out.println(\r\n                \"--- AUTOMATED SYSTEM TEST COMPLETE ---\"\r\n        );\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/Practical_Exam/MenuTestingfile.java b/app/src/test/java/Practical_Exam/MenuTestingfile.java
+--- a/app/src/test/java/Practical_Exam/MenuTestingfile.java	(revision bda9cd50cdd81c5ead2a0b9766953ef961bc72b1)
++++ b/app/src/test/java/Practical_Exam/MenuTestingfile.java	(date 1791166741834)
+@@ -5,7 +5,8 @@
+ import java.io.ByteArrayInputStream;
+ import java.util.Scanner;
+ 
+-public class MainSystemTest {
++public class
++MainSystemTest {
+     // paki-sabi po muna sa'kin kung gagalawin niyo'to
+ 
+     @Test
