@@ -43,7 +43,7 @@ public class MainMenu {
 
             } else if (choice == 4) {
 
-                teacherApprovalFeature.runFeature(scanner);
+                teacherApprovalFeature.runFeature();
 
             } else if (choice == 5) {
 
