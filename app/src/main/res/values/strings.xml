@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Stay-Slip-Management-System</string>
+    <string name="sbmo_approval">SBMO Approval</string>
+    <string name="stay_slip_request">Stay Slip Request</string>
+    <string name="review_the_request_details_below">Review the request details below.</string>
+    <string name="reason_medical_appointment">Reason: Medical Appointment</string>
+    <string name="date_apr_23_2025">Date: Apr 23, 2025</string>
+    <string name="time_10_00_am">Time: 10:00 AM</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="remarks_optional">Remarks (Optional)</string>
+    <string name="enter_remarks">Enter remarks...</string>
+    <string name="notify_student">Notify Student</string>
+    <string name="current_status">Current Status</string>
+    <string name="status_pending">Status: Pending</string>
 </resources>
