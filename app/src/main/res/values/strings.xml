@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Stay-Slip-Management-System</string>
     <string name="sbmo_approval">SBMO Approval</string>
     <string name="stay_slip_request">Stay Slip Request</string>
     <string name="review_the_request_details_below">Review the request details below.</string>
@@ -9,8 +8,24 @@
     <string name="approve">Approve</string>
     <string name="reject">Reject</string>
     <string name="remarks_optional">Remarks (Optional)</string>
-    <string name="enter_remarks">Enter remarks...</string>
+    <string name="enter_remarks">Enter remarks…</string>
     <string name="notify_student">Notify Student</string>
     <string name="current_status">Current Status</string>
     <string name="status_pending">Status: Pending</string>
+    <string name="pending_requests">Pending Requests</string>
+    <string name="remarks">Remarks</string>
+    <string name="review_and_approve_stay_slip_requests">Review and approve stay slip requests</string>
+    <string name="stay_slip_management_system">Stay Slip Management System</string>
+    <string name="teacher_approval">Teacher Approval</string>
+    <string name="teacher_portal">Teacher Portal</string>
+    <string name="Approve">✓ APPROVE</string>
+    <string name="Reject">✕ REJECT</string>
+    <string name="add_remarks_optional">Add remarks (optional)</string>
+    <string name="request_ss_2026_001">Request #SS–2026–001</string>
+    <string name="pending_review">Pending Review</string>
+    <string name="student_id_2026_01234">Student ID : 2026–01234</string>
+    <string name="student_name_juan_dela_cruz">Student Name : Juan Dela Cruz</string>
+    <string name="grade_amp_section_grade_12_st_philip_the_apostle"><![CDATA[Grade & Section : Grade 12 - St. Philip the Apostle]]></string>
+    <string name="time_frame_october_18_2026_3_00_pm_5_00_pm">Time Frame : October 18, 2026 (3:00 PM - 5:00 PM)</string>
+    <string name="reason_attending_a_school_activity">Reason : Attending a school activity</string>
 </resources>

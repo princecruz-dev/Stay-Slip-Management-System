@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:fitsSystemWindows="true"
-    android:background="#F4F7FC">
+    android:background="#F4F7FC"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +18,8 @@
 
         <!-- HEADER -->
 
+        <!-- Added tools:ignore="VisualLintSystemUi" since window insets (System UI padding) are handled dynamically in SBMOApproval.java via OnApplyWindowInsetsListener -->
         <TextView
-            android:id="@+id/SBMOapproval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -25,7 +27,8 @@
             android:text="@string/sbmo_approval"
             android:textColor="#1558B0"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="VisualLintSystemUi" />
 
         <TextView
             android:layout_width="match_parent"
@@ -54,7 +57,6 @@
             android:layout_marginTop="16dp">
 
             <TextView
-                android:id="@+id/txtReason"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reason_medical_appointment"
@@ -63,7 +65,6 @@
                 android:padding="6dp" />
 
             <TextView
-                android:id="@+id/txtDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/date_apr_23_2025"
@@ -72,7 +73,6 @@
                 android:padding="6dp" />
 
             <TextView
-                android:id="@+id/txtTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/time_10_00_am"
@@ -84,7 +84,6 @@
 
         <!-- APPROVE BUTTON -->
         <Button
-            android:id="@+id/btnApprove"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/approve"
@@ -92,11 +91,11 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:backgroundTint="#16A34A"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            tools:ignore="VisualLintButtonSize" />
 
         <!-- REJECT BUTTON -->
         <Button
-            android:id="@+id/btnReject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reject"
@@ -104,7 +103,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:backgroundTint="#DC2626"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            tools:ignore="VisualLintButtonSize" />
 
         <!-- REMARKS -->
         <TextView
@@ -117,7 +117,6 @@
             android:layout_marginTop="20dp" />
 
         <EditText
-            android:id="@+id/etRemarks"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:autofillHints=""
@@ -126,13 +125,13 @@
             android:inputType="textMultiLine"
             android:minLines="2"
             android:padding="12dp"
-            android:backgroundTint="#9CAFCB" />
+            android:backgroundTint="#9CAFCB"
+            tools:ignore="VisualLintTextFieldSize" />
 
         <!-- NOTIFICATION SWITCH -->
 
         <!-- STATUS -->
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switchNotify"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -142,7 +141,8 @@
             android:text="@string/notify_student"
             android:textColor="#172B4D"
             android:textSize="16sp"
-            app:showText="false" />
+            app:showText="false"
+            tools:ignore="VisualLintButtonSize" />
 
         <TextView
             android:layout_width="match_parent"
@@ -154,7 +154,6 @@
             android:layout_marginTop="16dp" />
 
         <TextView
-            android:id="@+id/txtStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

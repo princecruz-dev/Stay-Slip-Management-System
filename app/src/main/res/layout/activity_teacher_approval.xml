@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F7F9FC"
-    tools:context=".TeacherApproval">
+    tools:context=".TeacherApproval"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:id="@+id/header"
@@ -21,28 +22,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,VisualLintBounds">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Teacher Portal"
+            android:text="@string/teacher_portal"
             android:textColor="@android:color/white"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="VisualLintSystemUi" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="Stay Slip Management System"
+            android:text="@string/stay_slip_management_system"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
 
     </LinearLayout>
 
     <ScrollView
-        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -60,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teacher Approval"
+                android:text="@string/teacher_approval"
                 android:textColor="#193A70"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -69,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Review and approve stay slip requests"
+                android:text="@string/review_and_approve_stay_slip_requests"
                 android:textColor="#666666"
                 android:textSize="14sp" />
 
@@ -77,13 +79,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="Pending Requests"
+                android:text="@string/pending_requests"
                 android:textColor="#193A70"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/requestCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -92,69 +93,62 @@
                 android:padding="20dp">
 
                 <TextView
-                    android:id="@+id/txtRequestNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Request #SS-2026-001"
+                    android:text="@string/request_ss_2026_001"
                     android:textColor="#193A70"
                     android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txtStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:background="#FFF0C7"
                     android:padding="8dp"
-                    android:text="Pending Review"
-                    android:textColor="#9A6800"
+                    android:text="@string/pending_review"
+                    android:textColor="#BF360C"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txtStudentId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
-                    android:text="Student ID : 2026-01234"
+                    android:text="@string/student_id_2026_01234"
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/txtStudentName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Student Name : Juan Dela Cruz"
+                    android:text="@string/student_name_juan_dela_cruz"
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/txtGradeSection"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Grade &amp; Section : Grade 12 - St. Philip the Apostle"
+                    android:text="@string/grade_amp_section_grade_12_st_philip_the_apostle"
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/txtTimeFrame"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Time Frame : October 18, 2026 (3:00 PM - 5:00 PM)"
+                    android:text="@string/time_frame_october_18_2026_3_00_pm_5_00_pm"
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
                 <!-- Reason -->
                 <TextView
-                    android:id="@+id/txtReason"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Reason : Attending a school activity"
+                    android:text="@string/reason_attending_a_school_activity"
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
@@ -162,21 +156,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Remarks"
+                    android:text="@string/remarks"
                     android:textColor="#193A70"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/edtRemarks"
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_marginTop="8dp"
+                    android:autofillHints=""
                     android:background="@drawable/remarks_background"
                     android:gravity="top|start"
-                    android:hint="Add remarks (optional)"
+                    android:hint="@string/add_remarks_optional"
+                    android:inputType="textMultiLine"
                     android:padding="12dp"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="VisualLintTextFieldSize" />
 
                 <!-- Buttons -->
                 <LinearLayout
@@ -186,30 +182,30 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/btnApprove"
                         android:layout_width="0dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
                         android:backgroundTint="#14AA5A"
-                        android:text="✓  APPROVE"
-                        android:textColor="@android:color/white"
+                        android:text="@string/Approve"
+                        android:textColor="#3E2723"
                         android:textSize="13sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="VisualLintButtonSize" />
 
                     <Space
                         android:layout_width="10dp"
                         android:layout_height="1dp" />
 
                     <Button
-                        android:id="@+id/btnReject"
                         android:layout_width="0dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
                         android:backgroundTint="#DC3C41"
-                        android:text="✕  REJECT"
-                        android:textColor="@android:color/white"
+                        android:text="@string/Reject"
+                        android:textColor="#000000"
                         android:textSize="13sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="VisualLintButtonSize" />
 
                 </LinearLayout>
 

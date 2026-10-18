@@ -3,7 +3,8 @@
 
     <application
         android:allowBackup="true"
-        android:label="SBMO Approval"
+        android:icon="@mipmap/ic_launcher"
+        android:label="sbmo_Approval"
         android:theme="@style/Theme.StaySlipManagementSystem">
         <activity
             android:name=".SBMOApproval"
