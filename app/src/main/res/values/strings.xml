@@ -28,21 +28,4 @@
     <string name="grade_amp_section_grade_12_st_philip_the_apostle"><![CDATA[Grade & Section : Grade 12 - St. Philip the Apostle]]></string>
     <string name="time_frame_october_18_2026_3_00_pm_5_00_pm">Time Frame : October 18, 2026 (3:00 PM - 5:00 PM)</string>
     <string name="reason_attending_a_school_activity">Reason : Attending a school activity</string>
-    <string name="stay_slip_management">Stay Slip Management</string>
-    <string name="student_name">Student Name</string>
-    <string name="enter_student_name">Enter student name</string>
-    <string name="grade_amp_section"><![CDATA[Grade & Section]]></string>
-    <string name="e_g_grade_12_ict">e.g. Grade 12 - ICT</string>
-    <string name="reason_for_stay">Reason for Stay</string>
-    <string name="enter_reason_for_stay">Enter reason for stay</string>
-    <string name="date">Date</string>
-    <string name="select_date">Select date</string>
-    <string name="time">Time</string>
-    <string name="select_time">Select time</string>
-    <string name="Approve2">APPROVE</string>
-    <string name="decline">DECLINE</string>
-    <string name="Current_Status">Current Status</string>
-    <string name="Pending_Review">Pending Review</string>
-    <string name="Remarks_Optional">Remarks (Optional)</string>
-    <string name="Enter_Remarks">Enter remarks</string>
 </resources>
