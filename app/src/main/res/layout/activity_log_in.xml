@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,26 +8,26 @@
     android:background="@drawable/brown_simple_new_post_instagram_story__3_"
     tools:context=".LogIn" >
 
-    <Button
-        android:id="@+id/studentbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/white_button_bg"
-        android:backgroundTint="@null"
-        android:elevation="0dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:stateListAnimator="@null"
-        android:text="STUDENT"
-        android:textColor="#03A9F4"
-        android:textSize="31sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+<Button android:id="@+id/studentbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_button_bg"
+    android:backgroundTint="@null"
+    android:elevation="0dp"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:stateListAnimator="@null"
+    android:text="STUDENT"
+    android:textColor="#03A9F4"
+    android:textSize="31sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.543"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.578"
+    tools:ignore="HardcodedText,TextContrastCheck"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
 
     <Button
         android:id="@+id/teachertbtn"
@@ -69,3 +69,4 @@
         app:layout_constraintVertical_bias="0.911"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
