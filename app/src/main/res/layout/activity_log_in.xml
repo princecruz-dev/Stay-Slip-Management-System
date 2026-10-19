@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/brown_simple_new_post_instagram_story__3_"
-    tools:context=".LogIn" >
+    android:background="@drawable/brown_simple_new_post_instagram_story__7_"
+    tools:context=".LogIn">
 
-<Button android:id="@+id/studentbtn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/white_button_bg"
-    android:backgroundTint="@null"
-    android:elevation="0dp"
-    android:fontFamily="sans-serif-condensed-medium"
-    android:stateListAnimator="@null"
-    android:text="STUDENT"
-    android:textColor="#03A9F4"
-    android:textSize="31sp"
-    android:textStyle="bold"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.543"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.578"
-    tools:ignore="HardcodedText,TextContrastCheck"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <Button
+        android:id="@+id/studentbtn"
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:background="@drawable/white_button_bg"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:stateListAnimator="@null"
+        android:text="STUDENT"
+        android:textColor="#00BFFF"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
         android:id="@+id/teachertbtn"
@@ -44,9 +44,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.742" />
 
     <Button
         android:id="@+id/sbmobtn"
@@ -63,10 +64,64 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911"
+        app:layout_constraintVertical_bias="0.91"
         tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="177dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135"
+        app:srcCompat="@drawable/_1625147480_1728_removebg_preview" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="639dp"
+        android:layout_height="49dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleTextColor="#243B78" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="327dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:padding="4dp"
+        android:shadowColor="#FFFFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="4"
+        android:text="MANILA CATHEDRAL SCHOOL"
+        android:textColor="#172554"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
