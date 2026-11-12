@@ -45,9 +45,7 @@
     <string name="Pending_Review">Pending Review</string>
     <string name="Remarks_Optional">Remarks (Optional)</string>
     <string name="Enter_Remarks">Enter remarks</string>
-    <string name="mcs_title">MANILA CATHEDRAL SCHOOL</string>
-    <string name="select_user_type">Select User Type</string>
-    <string name="student">STUDENT</string>
-    <string name="teacher">TEACHER</string>
-    <string name="sbmo">SBMO</string>
+    <string name="x">X</string>
+    <string name="X">X</string>
+    <string name="PendingReview">PENDING REVIEW</string>
 </resources>
