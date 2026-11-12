@@ -48,4 +48,18 @@
     <string name="x">X</string>
     <string name="X">X</string>
     <string name="PendingReview">PENDING REVIEW</string>
+    <string name="mcs_title">MANILA CATHEDRAL SCHOOL</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="student">STUDENT</string>
+    <string name="teacher">TEACHER</string>
+    <string name="sbmo">SBMO</string>
+    <string name="school_building">School building</string>
+    <string name="student_character">Student character</string>
+    <string name="teacher_character">Teacher character</string>
+    <string name="sbmo_character">Sbmo character</string>
+    <string name="school_logo">Manila Cathedral School Logo</string>
+    <string name="studentbtn">Studentbtn</string>
+    <string name="teacherbtn">Teacherbtn</string>
+    <string name="sbmobtn">Sbmobtn</string>
+
 </resources>
