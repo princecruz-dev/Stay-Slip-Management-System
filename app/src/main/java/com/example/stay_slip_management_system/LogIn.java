@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class login extends AppCompatActivity {
+public class LogIn extends AppCompatActivity {
 
     ImageButton studentbtn, teacherbtn, sbmobtn;
 
@@ -20,15 +20,15 @@ public class login extends AppCompatActivity {
         sbmobtn = findViewById(R.id.sbmobtn1);
 
         studentbtn.setOnClickListener(v -> {
-            startActivity(new Intent(login.this, Staysliprequest.class));
+            startActivity(new Intent(LogIn.this, Staysliprequest.class));
         });
 
         teacherbtn.setOnClickListener(v -> {
-            startActivity(new Intent(login.this, TeacherApproval.class));
+            startActivity(new Intent(LogIn.this, TeacherApproval.class));
         });
 
         sbmobtn.setOnClickListener(v -> {
-            startActivity(new Intent(login.this, SBMOApproval.class));
+            startActivity(new Intent(LogIn.this, SBMOApproval.class));
         });
     }
 }

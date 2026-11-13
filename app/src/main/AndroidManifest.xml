@@ -8,7 +8,7 @@
         android:theme="@style/Theme.StaySlipManagementSystem">
 
         <activity
-            android:name=".LogIn"
+            android:name="LogIn"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
 
