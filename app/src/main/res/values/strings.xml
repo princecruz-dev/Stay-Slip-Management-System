@@ -61,5 +61,6 @@
     <string name="studentbtn">Studentbtn</string>
     <string name="teacherbtn">Teacherbtn</string>
     <string name="sbmobtn">Sbmobtn</string>
+    <string name="back">← Back</string>
 
 </resources>

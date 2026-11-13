@@ -34,7 +34,7 @@
             android:minHeight="0dp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            android:text="← Back"
+            android:text="@string/back"
             android:textColor="#1957B8"
             android:textSize="12sp" />
 
