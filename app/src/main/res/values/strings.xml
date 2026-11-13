@@ -62,5 +62,8 @@
     <string name="teacherbtn">Teacherbtn</string>
     <string name="sbmobtn">Sbmobtn</string>
     <string name="back">← Back</string>
+    <string name="Request_result" />
+    <string name="x1" />
+    <string name="pending_review1" />
 
 </resources>

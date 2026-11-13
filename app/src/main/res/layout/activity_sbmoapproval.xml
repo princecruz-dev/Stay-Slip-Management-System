@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:fitsSystemWindows="true"
     android:background="#F4F7FC">
 
     <LinearLayout
@@ -14,7 +12,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-
 
         <TextView
             android:layout_width="match_parent"
@@ -32,9 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/stay_slip_request"
+            android:textColor="#172B4D"
             android:textSize="21sp"
-            android:textStyle="bold"
-            android:textColor="#172B4D" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -44,85 +41,91 @@
             android:textColor="#546E7A"
             android:textSize="14sp" />
 
+        <!-- REQUEST DETAILS -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginTop="16dp"
             android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginTop="16dp">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="6dp"
                 android:text="@string/reason_medical_appointment"
-                android:textSize="16sp"
                 android:textColor="#172B4D"
-                android:padding="6dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="6dp"
                 android:text="@string/date_apr_23_2025"
-                android:textSize="16sp"
                 android:textColor="#172B4D"
-                android:padding="6dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="6dp"
                 android:text="@string/time_10_00_am"
-                android:textSize="16sp"
                 android:textColor="#172B4D"
-                android:padding="6dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
+        <!-- APPROVE BUTTON -->
         <Button
             android:id="@+id/btnApprove"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#16A34A"
             android:text="@string/approve"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#16A34A"
-            android:layout_marginTop="20dp"
             tools:ignore="VisualLintButtonSize" />
 
+        <!-- REJECT BUTTON -->
         <Button
             android:id="@+id/btnDecline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#DC2626"
             android:text="@string/reject"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#DC2626"
-            android:layout_marginTop="8dp"
             tools:ignore="VisualLintButtonSize" />
 
+        <!-- REMARKS -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="@string/remarks_optional"
-            android:textSize="18sp"
-            android:textStyle="bold"
             android:textColor="#172B4D"
-            android:layout_marginTop="20dp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:autofillHints=""
-            android:hint="@string/enter_remarks"
+            android:backgroundTint="#9CAFCB"
             android:gravity="top|start"
+            android:hint="@string/enter_remarks"
             android:inputType="textMultiLine"
             android:minLines="2"
             android:padding="12dp"
-            android:backgroundTint="#9CAFCB"
+            android:textColorHint="#546E7A"
             tools:ignore="VisualLintTextFieldSize" />
 
+        <!-- NOTIFICATION SWITCH -->
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -133,30 +136,65 @@
             android:text="@string/notify_student"
             android:textColor="#172B4D"
             android:textSize="16sp"
-            app:showText="false"
             tools:ignore="VisualLintButtonSize" />
 
-        <TextView
+        <!-- RESULT DISPLAY -->
+        <LinearLayout
+            android:id="@+id/resultBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/current_status"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#172B4D"
-            android:layout_marginTop="16dp" />
-
-        <TextView
-            android:id="@+id/txtStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="#FFF3CD"
-            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:text="@string/PendingReview"
-            android:textColor="#E65100"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:visibility="gone">
+
+            <!-- RESULT HEADER AND CLOSE BUTTON -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Request_result"
+                    android:textColor="#172B4D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
+                    android:backgroundTint="#DC2626"
+                    android:text="@string/x1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- RESULT STATUS -->
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FFF3CD"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/pending_review1"
+                android:textColor="#E65100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
