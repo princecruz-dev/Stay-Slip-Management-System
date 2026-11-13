@@ -65,5 +65,28 @@
     <string name="Request_result" />
     <string name="x1" />
     <string name="pending_review1" />
+    <string name="decision_details">DECISION DETAILS</string>
+    <string name="decision_not_reviewed">Decision by: Not yet reviewed</string>
+    <string name="date_time_not_reviewed">Date and Time: Not yet reviewed</string>
+    <string name="decision_remarks_none">Remarks: None</string>
+
+    <string name="confirm_decision">Confirm Decision</string>
+    <string name="confirm_approve">Are you sure you want to approve this stay slip request?</string>
+    <string name="confirm_reject">Are you sure you want to reject this stay slip request?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="no_remarks">No remarks provided.</string>
+
+    <string name="decision_by_teacher">Decision by: Teacher</string>
+    <string name="date_time_format">Date and Time: %1$s</string>
+    <string name="remarks_format">Remarks: %1$s</string>
+
+    <string name="request_decision_title">Request %1$s!</string>
+    <string name="student_info_format">Student Name: Juan Dela Cruz\nStudent ID: 2026-01234\nGrade &amp; Section: Grade 12 - St. Philip the Apostle\n\nDecision: %1$s\nDate and Time: %2$s\nRemarks: %3$s</string>
+
 
 </resources>

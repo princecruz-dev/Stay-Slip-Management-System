@@ -7,47 +7,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F7F9FC"
-    tools:context=".TeacherApproval"
-    tools:ignore="Overdraw">
+    tools:context=".TeacherApproval">
 
+    <!-- HEADER -->
     <LinearLayout
         android:id="@+id/header"
-        android:layout_width="419dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
         android:background="#1957B8"
         android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck,VisualLintBounds">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btnBack"
-            android:layout_width="128dp"
+            android:layout_width="100dp"
             android:layout_height="45dp"
             android:backgroundTint="#FFFFFF"
             android:minWidth="0dp"
             android:minHeight="0dp"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
             android:text="@string/back"
             android:textColor="#1957B8"
             android:textSize="12sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="@string/stay_slip_management_system"
             android:textColor="@android:color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
+    <!-- MAIN CONTENT -->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
@@ -89,6 +89,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+            <!-- REQUEST CARD -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,6 +107,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -148,7 +150,6 @@
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
-                <!-- Reason -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -157,6 +158,7 @@
                     android:textColor="#252D3A"
                     android:textSize="15sp" />
 
+                <!-- REMARKS -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -167,10 +169,11 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/etRemarks"
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_marginTop="8dp"
-                    android:autofillHints=""
+                    android:autofillHints="none"
                     android:background="@drawable/remarks_background"
                     android:gravity="top|start"
                     android:hint="@string/add_remarks_optional"
@@ -179,7 +182,7 @@
                     android:textSize="14sp"
                     tools:ignore="VisualLintTextFieldSize" />
 
-                <!-- Buttons -->
+                <!-- APPROVE AND REJECT BUTTONS -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -187,12 +190,13 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/btnApprove"
                         android:layout_width="0dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
                         android:backgroundTint="#14AA5A"
                         android:text="@string/Approve"
-                        android:textColor="#3E2723"
+                        android:textColor="#FFFFFF"
                         android:textSize="13sp"
                         android:textStyle="bold"
                         tools:ignore="VisualLintButtonSize" />
@@ -202,12 +206,13 @@
                         android:layout_height="1dp" />
 
                     <Button
+                        android:id="@+id/btnReject"
                         android:layout_width="0dp"
                         android:layout_height="55dp"
                         android:layout_weight="1"
                         android:backgroundTint="#DC3C41"
                         android:text="@string/Reject"
-                        android:textColor="#000000"
+                        android:textColor="#FFFFFF"
                         android:textSize="13sp"
                         android:textStyle="bold"
                         tools:ignore="VisualLintButtonSize" />
@@ -216,9 +221,54 @@
 
             </LinearLayout>
 
+            <!-- DECISION DETAILS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/request_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/decision_details"
+                    android:textColor="#193A70"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDecisionBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/decision_not_reviewed"
+                    android:textColor="#252D3A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDecisionTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/date_time_not_reviewed"
+                    android:textColor="#252D3A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDecisionRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/decision_remarks_none"
+                    android:textColor="#252D3A"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
         </LinearLayout>
-
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
