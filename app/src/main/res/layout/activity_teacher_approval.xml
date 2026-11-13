@@ -25,14 +25,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck,VisualLintBounds">
 
-        <TextView
+        <Button
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/teacher_portal"
-            android:textColor="@android:color/white"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="VisualLintSystemUi" />
+            android:layout_height="35dp"
+            android:backgroundTint="#FFFFFF"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="← Back"
+            android:textColor="#1957B8"
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,6 +49,7 @@
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -214,5 +219,6 @@
         </LinearLayout>
 
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
